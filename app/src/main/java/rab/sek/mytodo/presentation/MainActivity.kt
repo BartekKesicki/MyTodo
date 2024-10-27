@@ -1,4 +1,4 @@
-package rab.sek.mytodo
+package rab.sek.mytodo.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

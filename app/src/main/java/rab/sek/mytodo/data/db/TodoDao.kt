@@ -1,4 +1,4 @@
-package rab.sek.mytodo.db
+package rab.sek.mytodo.data.db
 
 import androidx.room.Dao
 import androidx.room.Delete

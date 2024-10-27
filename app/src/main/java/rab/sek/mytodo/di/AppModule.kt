@@ -7,8 +7,8 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ActivityComponent
 import dagger.hilt.android.qualifiers.ApplicationContext
-import rab.sek.mytodo.db.TodoDao
-import rab.sek.mytodo.db.TodoDatabase
+import rab.sek.mytodo.data.db.TodoDao
+import rab.sek.mytodo.data.db.TodoDatabase
 import javax.inject.Singleton
 
 @Module

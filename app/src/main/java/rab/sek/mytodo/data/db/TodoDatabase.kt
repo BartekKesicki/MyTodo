@@ -1,4 +1,4 @@
-package rab.sek.mytodo.db
+package rab.sek.mytodo.data.db
 
 import androidx.room.Database
 import androidx.room.RoomDatabase

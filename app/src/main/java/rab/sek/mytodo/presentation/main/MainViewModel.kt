@@ -1,4 +1,4 @@
-package rab.sek.mytodo.presentation
+package rab.sek.mytodo.presentation.main
 
 import androidx.lifecycle.ViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel

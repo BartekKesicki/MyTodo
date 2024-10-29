@@ -6,17 +6,17 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ActivityComponent
+import dagger.hilt.android.components.ViewModelComponent
 import dagger.hilt.android.qualifiers.ApplicationContext
 import rab.sek.mytodo.data.db.TodoDao
 import rab.sek.mytodo.data.db.TodoDatabase
 import javax.inject.Singleton
 
 @Module
-@InstallIn(ActivityComponent::class)
-object AppModule {
+@InstallIn(ViewModelComponent::class)
+object DbModule {
 
     @Provides
-    @Singleton
     fun provideDatabase(@ApplicationContext context: Context): TodoDatabase {
         return Room.databaseBuilder(
             context,
@@ -25,7 +25,6 @@ object AppModule {
     }
 
     @Provides
-    @Singleton
     fun provideTodoDao(database: TodoDatabase): TodoDao {
         return database.todoDao()
     }

@@ -14,11 +14,11 @@ interface TodoDao {
     fun getAll(): List<Todo>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insert(todo: Todo)
+    fun insert(todo: Todo): Long
 
     @Update
-    fun updateTodo(todo: Todo)
+    fun updateTodo(todo: Todo): Int
 
     @Delete
-    fun deleteTodo(todo: Todo)
+    fun deleteTodo(todo: Todo): Int
 }

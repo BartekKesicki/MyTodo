@@ -1,4 +1,4 @@
-package rab.sek.mytodo.ui.theme
+package rab.sek.mytodo.presentation.theme
 
 import androidx.compose.ui.graphics.Color
 

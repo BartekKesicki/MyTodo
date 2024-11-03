@@ -1,4 +1,4 @@
-package rab.sek.mytodo.ui.theme
+package rab.sek.mytodo.presentation.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

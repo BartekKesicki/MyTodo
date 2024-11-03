@@ -1,4 +1,4 @@
-package rab.sek.mytodo.di
+package rab.sek.mytodo.data.di
 
 import android.content.Context
 import androidx.room.Room

@@ -1,11 +1,11 @@
 package rab.sek.mytodo.domain.repository
 
 import kotlinx.coroutines.flow.Flow
-import rab.sek.mytodo.data.db.Todo
+import rab.sek.mytodo.data.db.TodoEntity
 
 interface TodoRepository {
-    fun getAll(): Flow<List<Todo>>
-    fun insert(todo: Todo): Flow<Boolean>
-    fun update(todo: Todo): Flow<Boolean>
-    fun delete(todo: Todo): Flow<Boolean>
+    fun getAll(): Flow<List<TodoEntity>>
+    fun insert(todoEntity: TodoEntity): Flow<Boolean>
+    fun update(todoEntity: TodoEntity): Flow<Boolean>
+    fun delete(todoEntity: TodoEntity): Flow<Boolean>
 }

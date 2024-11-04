@@ -1,8 +1,8 @@
 package rab.sek.mytodo.domain.usecase.save
 
 import kotlinx.coroutines.flow.Flow
-import rab.sek.mytodo.data.db.Todo
+import rab.sek.mytodo.data.db.TodoEntity
 
 interface SaveTodoUseCase {
-    fun insert(todo: Todo): Flow<Boolean>
+    fun insert(todoEntity: TodoEntity): Flow<Boolean>
 }

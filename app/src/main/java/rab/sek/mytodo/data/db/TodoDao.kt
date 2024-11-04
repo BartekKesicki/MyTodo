@@ -10,15 +10,15 @@ import androidx.room.Update
 @Dao
 interface TodoDao {
 
-    @Query("SELECT * FROM Todo")
-    fun getAll(): List<Todo>
+    @Query("SELECT * FROM TodoEntity")
+    fun getAll(): List<TodoEntity>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insert(todo: Todo): Long
+    fun insert(todoEntity: TodoEntity): Long
 
     @Update
-    fun updateTodo(todo: Todo): Int
+    fun updateTodo(todoEntity: TodoEntity): Int
 
     @Delete
-    fun deleteTodo(todo: Todo): Int
+    fun deleteTodo(todoEntity: TodoEntity): Int
 }

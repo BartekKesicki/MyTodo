@@ -2,7 +2,8 @@ package rab.sek.mytodo.domain.usecase.update
 
 import kotlinx.coroutines.flow.Flow
 import rab.sek.mytodo.data.db.TodoEntity
+import rab.sek.mytodo.presentation.model.Todo
 
 interface UpdateTodoUseCase {
-    fun update(todoEntity: TodoEntity): Flow<Boolean>
+    suspend fun update(todo: Todo)
 }

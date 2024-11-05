@@ -1,6 +1,6 @@
 package rab.sek.mytodo.presentation.model
 
-data class TodoPresentationModel(
+data class Todo(
     val id: Int,
     val isChecked: Boolean,
     val content: String

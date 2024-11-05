@@ -15,14 +15,12 @@ class TodoRepositoryImpl @Inject constructor(
         emit(todoDao.getAll())
     }
 
-    override fun insert(todoEntity: TodoEntity): Flow<Boolean> = flow {
-        val id = todoDao.insert(todoEntity)
-        emit(id > 0)
+    override suspend fun insert(todoEntity: TodoEntity) {
+        todoDao.insert(todoEntity)
     }
 
-    override fun update(todoEntity: TodoEntity): Flow<Boolean> = flow {
-        val rows = todoDao.updateTodo(todoEntity)
-        emit(rows > 0)
+    override suspend fun update(todoEntity: TodoEntity) {
+        todoDao.updateTodo(todoEntity)
     }
 
     override fun delete(todoEntity: TodoEntity): Flow<Boolean> = flow {

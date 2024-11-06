@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.ksp)
     alias(libs.plugins.hilt.android)
+    alias(libs.plugins.compose.compiler)
 }
 
 android {
@@ -42,7 +43,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+        kotlinCompilerExtensionVersion = "1.5.15"
     }
     packaging {
         resources {
@@ -70,6 +71,15 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+
+    // COMPOSE COMPILER
+    implementation(libs.androidx.compiler)
+
+    // MOCKITO
+    testImplementation(libs.mockito.core)
+    testImplementation(libs.mockito.kotlin)
+    testImplementation(libs.kotlinx.coroutines.test)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
